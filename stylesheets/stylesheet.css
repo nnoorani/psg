@@ -17,6 +17,14 @@ b {
 	margin-bottom: 60px;
 }
 
+.mt40 {
+	margin-top: 40px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
 .mt100 {
 	margin-top: 100px;
 }
@@ -71,6 +79,12 @@ b {
 	margin-bottom: 30px;
 }
 
+.featurette h3, .marketing h2 {
+	font-family: "Raleway";
+	font-size: 3rem;
+	font-weight: 700;
+}
+
 .featurette .text-muted {
 	font-family: "Raleway";
 	font-size: 3rem;
@@ -78,8 +92,8 @@ b {
 	font-weight: 700;
 }
 
-.featurette .text-grey {
-	color: #4a4a4a;
+.featurette .text-navy {
+	color: #323073;
 }
 
 .featurette-full h2 {
@@ -94,4 +108,8 @@ b {
 
 .jumbotron .featurette-full p {
 	margin: 10px 0 60px;
+}
+
+.featurette-yellow h2, .featurette-yellow .text-muted{
+	color:#323073;
 }
