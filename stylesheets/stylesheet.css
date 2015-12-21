@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Besom";
+	src: url("besom.ttf");
+}
+
 body {
 	font-family: "Raleway", "Open Sans", Helvetica, sans-serif;
 	font-weight: 300;
@@ -22,7 +27,7 @@ b {
 .intro-header {
 	display: block;
 	margin: 0 auto;
-	padding: 70px 0 200px;
+	padding: 70px 0;
 	color: #666;
 	/*background: url("psg-man.png") no-repeat bottom right;*/
 	background-size: 350px;
@@ -47,7 +52,6 @@ b {
 }
 
 .jumbotron {
-	padding: 0;
 	margin-bottom: 0;
 }
 
@@ -59,18 +63,22 @@ b {
 	padding-left: 100px;
 }
 .featurette h2, .marketing h2 {
+	font-family: "Besom";
+	font-size: 5rem;
 	color: #9068be;
-	font-weight: 500;
+	font-weight: 700;
 	margin-bottom: 30px;
 }
 
 .featurette .text-muted {
+	font-family: "Raleway";
+	font-size: 3rem;
 	color: #9068be;
-	font-weight: 300;
+	font-weight: 700;
 }
 
-.featurette-full {
-	padding: 40px 0;
+.featurette .text-grey {
+	color: #4a4a4a;
 }
 
 .featurette-full h2 {
@@ -85,23 +93,4 @@ b {
 
 .jumbotron .featurette-full p {
 	margin: 10px 0 60px;
-}
-
-
-.featurette-purple {
-	background-color: #9068be;
-	color: #fff;
-}
-
-.featurette-purple h2, .featurette-purple .text-muted {
-	color: #fff;
-}
-
-.featurette-yellow {
-	background-color: #FFE177;
-	color: #4a4a4a;
-}
-
-.featurette-yellow h2, .featurette-yellow .text-muted {
-	color: #4a4a4a;
 }
