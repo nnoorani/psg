@@ -45,14 +45,14 @@ b {
 .intro-header h4 {
 	letter-spacing: 2px;
 	font-weight: 700;
-	color: #9068be;
+	color: #ffb03b;
 	margin-bottom: 30px;
 }
 
 .intro-header h1 {
 	font-size: 7rem;
 	margin-bottom: 30px;
-	color: #9068be;
+	color: #ffb03b;
 }
 
 .intro-header p {
@@ -74,7 +74,7 @@ b {
 .featurette h2, .marketing h2 {
 	font-family: "Besom";
 	font-size: 5rem;
-	color: #9068be;
+	color: #ffb03b;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
@@ -88,7 +88,7 @@ b {
 .featurette .text-muted {
 	font-family: "Raleway";
 	font-size: 3rem;
-	color: #9068be;
+	color: #ffb03b;
 	font-weight: 700;
 }
 
