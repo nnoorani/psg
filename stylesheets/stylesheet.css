@@ -95,3 +95,7 @@ b {
 .jumbotron .featurette-full p {
 	margin: 10px 0 60px;
 }
+
+.featurette-yellow .text-muted, .featurette-yellow h2 {
+	color:#323073;
+}
