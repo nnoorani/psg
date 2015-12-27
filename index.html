@@ -26,6 +26,12 @@
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/carousel.css" rel="stylesheet">
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    mixpanel.init("be28fde0f06b28d78b61b02b85241f5e");</script><!-- end Mixpanel -->
+
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -42,8 +48,8 @@
         </div>
       </div>
        <img class="mb60" src="stylesheets/psg-logo.png" width="90%" />
-       <p class="lead"><b>Studies say using your imagination improves your cogntive ability. </br>Now, who doesn't want that?</b></br>
-        So, let's imagine it's May 2016, you're a post-secondary student and you've just arrived in Waterloo for PSG 2016....</p>
+       <p class="lead"><b>Studies say using your imagination improves your cognitive ability. </br>Now, who doesn't want that?</b></br>
+        So, let's imagine it's May 2016, you're a post-secondary student and you're heading to Waterloo for PSG 2016....</p>
         <img class="mt100" src="stylesheets/chevron.png" width="30" />
      </div>
    </div>
@@ -51,6 +57,16 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="jumbotron">
+        <div class="row featurette featurette-full featurette-yellow text-center">
+          <h2 class="featurette-heading col-md-10 col-md-push-1">Water-who? <span class="text-muted">Feeling lost?</span></h2>
+          <p class="lead col-md-8 col-md-push-2">Whether you're running from the 6 or driving your mustang from Western, Waterloo is just around the corner.</p>
+          <div class="col-md-12">
+            <img class="mb60" src="stylesheets/directions.jpg" width="500" />
+          </div>
+        </div>
+    </div>
 
     <div class="jumbotron">
         <div class="row featurette featurette-full text-center">
@@ -85,7 +101,7 @@
         <div class="col-md-12 text-center">
           <h2 class="featurette-heading">This way to your first game.</h2>
           <img class="center-block mb60" width="30" src="stylesheets/down_arrow.png" />
-          <p class="lead col-md-6 col-md-push-3">You're an athlete and your energy is valuable. You won't lose because you were tired from your walk over. </br> </br> Average walking time between facilities: <b>10 minutes.</b></p>
+          <p class="lead col-md-6 col-md-push-3">You're an athlete and your energy is valuable. You won't lose because you were tired from your walk over. </br> </br> Maximum walking time between facilities: <b>10 minutes.</b></p>
           <div class="col-md-12">
             <iframe class="hidden-sm hidden-xs" width="560" height="315" src="https://www.youtube.com/embed/x7WOxnh9V90" frameborder="0" allowfullscreen></iframe>
             <iframe class="hidden-md hidden-lg" width="320" height="210" src="https://www.youtube.com/embed/x7WOxnh9V90" frameborder="0" allowfullscreen></iframe>
@@ -256,4 +272,11 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- // <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
+  <script>
+  $(function() {
+    $(document).on('ready', function() {
+      mixpanel.track("Landed PSG");
+    });
+  });
+  </script>
 </html>
